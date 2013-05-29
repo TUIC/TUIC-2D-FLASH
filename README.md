@@ -1,5 +1,3 @@
-TUIC-2D-Flash open source project
-
 Detail
 =============
 Another spatial approach, called TUIC-2D-Flash, use a layout similar to TUIC-2D. The figure shows a structure of the tag. A TUIC-Flash tag contains 3 reference points which user can design their own tag. The distance between the three reference points are also used to determine the tag ID.
