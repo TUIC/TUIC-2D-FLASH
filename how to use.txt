@@ -1,5 +1,15 @@
+step1: download the folder "custom" to your project
+step2: add the code as follow to your main.as
+-----------------------------------------------------
 import flash.events.TouchEvent;
 import custom.TagEvent;
 Multitouch.inputMode = MultitouchInputMode.TOUCH_POINT;//set MutiltouchInputMode
 var detector:TUICdetector = new TUICdetector();
 stage.addChild(detector.DetectArea);//add the Tag Detect layer
+-----------------------------------------------------
+step3:add the EventListener you want to use
+
+detector.addEventListener(TagEvent.ON_TAG,TagOn);
+detector.addEventListener(TagEvent.MOVE_TAG,TagMove);
+detector.addEventListener(TagEvent.OFF_TAG,TagOff);
+
