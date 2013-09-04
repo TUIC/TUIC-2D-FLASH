@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <application xmlns="http://ns.adobe.com/air/application/3.4">
-    <id>sample-1</id>
+    <id>showthetag</id>
     <versionNumber>1.0</versionNumber>
-    <filename>sample-1</filename>
+    <filename>showthetag</filename>
     <description></description>
     <!-- To localize the description, use the following format for the description element.
 	<description>
@@ -11,7 +11,7 @@
 		<text xml:lang="ja">Japanese App description goes here</text>
 	</description>
 	-->
-    <name>sample-1</name>
+    <name>showthetag</name>
     <!-- To localize the name, use the following format for the name element.
 	<name>
 		<text xml:lang="en">English App name goes here</text>
@@ -21,11 +21,11 @@
 	-->
     <copyright></copyright>
     <initialWindow>
-        <content>sample-1.swf</content>
+        <content>showthetag.swf</content>
         <systemChrome>standard</systemChrome>
         <transparent>false</transparent>
         <visible>true</visible>
-        <fullScreen>false</fullScreen>
+        <fullScreen>true</fullScreen>
         <autoOrients>false</autoOrients>
         <aspectRatio>portrait</aspectRatio>
         <renderMode>auto</renderMode>
@@ -33,4 +33,8 @@
     <customUpdateUI>false</customUpdateUI>
     <allowBrowserInvocation>false</allowBrowserInvocation>
     <icon></icon>
-<iPhone><requestedDisplayResolution>standard</requestedDisplayResolution><InfoAdditions><![CDATA[<key>UIDeviceFamily</key><array><string>1</string><string>2</string></array>]]></InfoAdditions></iPhone></application>
+    <iPhone>
+        <requestedDisplayResolution>standard</requestedDisplayResolution>
+        <InfoAdditions><![CDATA[<key>UIDeviceFamily</key><array><string>1</string><string>2</string></array>]]></InfoAdditions>
+    </iPhone>
+</application>
