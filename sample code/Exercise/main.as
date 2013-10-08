@@ -1,0 +1,2 @@
+﻿stop();
+import flash.events.TouchEvent;import customevent.TagEvent;Multitouch.inputMode = MultitouchInputMode.TOUCH_POINT;var detector:TUICdetector = new TUICdetector(0,0,384,512);stage.addChild(detector.DetectArea);
