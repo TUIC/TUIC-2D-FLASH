@@ -1,1 +1,29 @@
-﻿import flash.display.Sprite;import flash.events.TouchEvent;import flash.events.MouseEvent;import customevent.TagEvent;stop();Multitouch.inputMode = MultitouchInputMode.TOUCH_POINT;var detector:TUICdetector = new TUICdetector();//setup your DetectArea's size and coordinate areaX,areaY,areaW,areaHstage.addChild(detector.DetectArea);var detectvalue:int;var debugText:TextField = new TextField();debugText.width = 200;debugText.height = 100;debugText.multiline = true;debugText.wordWrap = true;debugText.border = true;addChild(debugText);debugText.visible=false;detector.addEventListener(TagEvent.ON_TAG,TagOn);detector.addEventListener(TagEvent.MOVE_TAG,TagMove);detector.addEventListener(TagEvent.OFF_TAG,TagOff);function  TagMove(e:TagEvent){	    if(e.stageX<=256)			debugText.x = e.stageX+150;		else			debugText.x = e.stageX-350;			     	debugText.visible = true;		debugText.y = e.stageY;		debugText.text = "Tag ID: "+detectvalue+"\nTag.x: " + e.stageX + "   Tag.y: " +e.stageY+ " \nAngle " +detector.angle;		}function TagOn(e:TagEvent){		debugText.visible = true;		detectvalue=e.TAG_ID;//		infobox0.txt_tagid.text = "" + detectvalue;		}function TagOff(e:TagEvent){	debugText.visible = false;}
+﻿stop();
+import flash.display.Sprite;
+import flash.events.TouchEvent;
+import tw.tuic.TagEvent;
+Multitouch.inputMode = MultitouchInputMode.TOUCH_POINT;
+var detector:TUICdetector = new TUICdetector(0,0,768,1024,true);
+//setup your DetectArea's size and coordinate areaX,areaY,areaW,areaH,debugmode's on & off
+//ex:  var detector:TUICdetector = new TUICdetector(0,0,768,1024,false);
+
+stage.addChild(detector.DetectArea);
+
+
+detector.addEventListener(TagEvent.ON_TAG,TagOn);
+detector.addEventListener(TagEvent.MOVE_TAG,TagMove);
+detector.addEventListener(TagEvent.OFF_TAG,TagOff);
+
+function  TagMove(e:TagEvent)
+{
+
+}
+
+function TagOn(e:TagEvent)
+{
+				
+}
+function TagOff(e:TagEvent)
+{
+	
+}

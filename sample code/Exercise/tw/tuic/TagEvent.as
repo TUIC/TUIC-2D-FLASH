@@ -1,4 +1,4 @@
-﻿package customevent
+﻿package tw.tuic
 {
      import flash.events.Event;
      public class TagEvent extends Event
@@ -10,9 +10,9 @@
 		  public static const ROTATE_TAG:String = "rotateTag";
 		
           
-		  public var stageX:int;
-		  public var stageY:int;
-		   public var TAG_ID:int;
+		  public var x:int;
+		  public var y:int;
+		   public var id:int;
 		  
 		  //rotation
 		  
@@ -22,12 +22,12 @@
           {
 
 			super(type, bubbles, cancelable);  
-			this.stageX = stageX;
-			this.stageY = stageY;
-			this.TAG_ID = TAG_ID;
+			this.x = stageX;
+			this.y = stageY;
+			this.id = TAG_ID;
           }
 		  public function SetID(apple:int){
-			  this.TAG_ID = apple;
+			  this.id = apple;
 		  }
      }
 }
