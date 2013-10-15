@@ -31,9 +31,10 @@ var detector:TUICdetector = new TUICdetector(0,0,768,1024,true);//add the Tag De
 
 
 stage.addChild(detector.DetectArea);
+
 -----------------------------------------------------
 step3:add the EventListener you want to use
-
+-----------------------------------------------------
 detector.addEventListener(TagEvent.ON_TAG,TagOn);
 detector.addEventListener(TagEvent.MOVE_TAG,TagMove);
 detector.addEventListener(TagEvent.OFF_TAG,TagOff);
