@@ -16,7 +16,8 @@ Licensed by OSI:Apache License 2.0
 
 How to Use it
 =============
-step1: download the folder "custom" to your project
+step1: download the folder "customfile" to your project
+-----------------------------------------------------
 step2: add the code as follow to your main.as
 -----------------------------------------------------
 stop();
