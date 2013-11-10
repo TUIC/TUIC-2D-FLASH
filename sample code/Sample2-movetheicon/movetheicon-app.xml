@@ -1,12 +1,62 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<application xmlns="http://ns.adobe.com/air/application/3.4">
-    <id>movetheicon</id>
+<application xmlns="http://ns.adobe.com/air/application/3.6">
+    <id>tw.edu.nccu.iui.com.movetheicon</id>
     <versionNumber>1.0</versionNumber>
     <filename>movetheicon</filename>
     <description/>
-<!-- To localize the description, use the following format for the description element.<description><text xml:lang="en">English App description goes here</text><text xml:lang="fr">French App description goes here</text><text xml:lang="ja">Japanese App description goes here</text></description>-->
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <!-- To localize the description, use the following format for the description element.<description><text xml:lang="en">English App description goes here</text><text xml:lang="fr">French App description goes here</text><text xml:lang="ja">Japanese App description goes here</text></description>-->
     <name>movetheicon</name>
-<!-- To localize the name, use the following format for the name element.<name><text xml:lang="en">English App name goes here</text><text xml:lang="fr">French App name goes here</text><text xml:lang="ja">Japanese App name goes here</text></name>-->
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <!-- To localize the name, use the following format for the name element.<name><text xml:lang="en">English App name goes here</text><text xml:lang="fr">French App name goes here</text><text xml:lang="ja">Japanese App name goes here</text></name>-->
     <copyright/>
     <initialWindow>
         <content>movetheicon.swf</content>
@@ -22,9 +72,13 @@
     <customUpdateUI>false</customUpdateUI>
     <allowBrowserInvocation>false</allowBrowserInvocation>
     <iPhone>
-        <InfoAdditions>
-      <![CDATA[<key>UIDeviceFamily</key><array><string>1</string><string>2</string></array>]]>
-    </InfoAdditions>
+        <InfoAdditions><![CDATA[
+  <key>UIDeviceFamily</key>
+  <array>
+    <string>1</string>
+    <string>2</string>
+  </array>
+]]></InfoAdditions>
         <requestedDisplayResolution>standard</requestedDisplayResolution>
     </iPhone>
 </application>
